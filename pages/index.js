@@ -28,7 +28,7 @@ export default function Home({data}) {
   }, [data]);
 
   return (
-    <main className="flex mx-auto min-h-screen flex-col items-center justify-center gap-8 p-24 w-5/6 sm:w-3/4">
+    <main className="flex mx-auto min-h-screen flex-col items-center justify-center gap-8 w-5/6 sm:w-3/4 md:p-24 my-8">
       <Table results={tempData} tableType="tempreture" loading={isLoading} />
       <Table results={humidityData} tableType="humidity" loading={isLoading} />
     </main>
